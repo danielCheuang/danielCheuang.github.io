@@ -5,20 +5,20 @@
   
 
   
-  <title>Linux包管理 | Hexo</title>
+  <title>linux系统简单方式安装mysql | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="aaaaaabbbbb">
-<meta name="keywords" content="Linux">
+  <meta name="description" content="deepind linux系统 1.apt-get install mysql-server    中途会要求设置mysql root用户密码 2.apt-get install mysql-client(如果安装mysql-server时，mysql-client也安装了可以跳过) 3.检查安装情况 数据目录:/var/lib/mysql 配置文件:/usr/share/mysql/, /etc">
+<meta name="keywords" content="环境,mysql">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux包管理">
-<meta property="og:url" content="http://yoursite.com/2018/04/30/Linux包管理/index.html">
+<meta property="og:title" content="linux系统简单方式安装mysql">
+<meta property="og:url" content="http://yoursite.com/2018/05/01/install-mysql-in-simple-way/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="aaaaaabbbbb">
+<meta property="og:description" content="deepind linux系统 1.apt-get install mysql-server    中途会要求设置mysql root用户密码 2.apt-get install mysql-client(如果安装mysql-server时，mysql-client也安装了可以跳过) 3.检查安装情况 数据目录:/var/lib/mysql 配置文件:/usr/share/mysql/, /etc">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-30T11:08:34.948Z">
+<meta property="og:updated_time" content="2018-05-01T13:44:40.156Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux包管理">
-<meta name="twitter:description" content="aaaaaabbbbb">
+<meta name="twitter:title" content="linux系统简单方式安装mysql">
+<meta name="twitter:description" content="deepind linux系统 1.apt-get install mysql-server    中途会要求设置mysql root用户密码 2.apt-get install mysql-client(如果安装mysql-server时，mysql-client也安装了可以跳过) 3.检查安装情况 数据目录:/var/lib/mysql 配置文件:/usr/share/mysql/, /etc">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -65,10 +65,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-Linux包管理" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-install-mysql-in-simple-way" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/04/30/Linux包管理/" class="article-date">
-  <time datetime="2018-04-30T10:54:08.000Z" itemprop="datePublished">2018-04-30</time>
+    <a href="/2018/05/01/install-mysql-in-simple-way/" class="article-date">
+  <time datetime="2018-05-01T13:07:39.000Z" itemprop="datePublished">2018-05-01</time>
 </a>
     
   </div>
@@ -79,7 +79,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Linux包管理
+      linux系统简单方式安装mysql
     </h1>
   
 
@@ -87,15 +87,27 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>aaaaaa<br>bbbbb</p>
-
+        <p>deepind linux系统</p>
+<p>1.apt-get install mysql-server<br>    中途会要求设置mysql root用户密码</p>
+<p>2.apt-get install mysql-client(如果安装mysql-server时，mysql-client也安装了可以跳过)</p>
+<p>3.检查安装情况</p>
+<pre><code>数据目录:/var/lib/mysql
+配置文件:/usr/share/mysql/, /etc/mysql/
+相关命令:/usr/bin/mysql*, /usr/sbin/*
+启动脚本:/etc/init.d/mysql
+启动服务:service mysql start
+关闭服务:service mysql start
+查看服务:service mysql start
+</code></pre><p>4.连接数据库</p>
+<pre><code>mysql -h 127.0.0.1 -P 3306 -uroot -p123
+</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/30/Linux包管理/" data-id="cjgnpzf0x0003ognu5f9s0qew" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/01/install-mysql-in-simple-way/" data-id="cjgnq54qz0000qenuvb0bjw2j" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/环境/">环境</a></li></ul>
 
     </footer>
   </div>
@@ -103,19 +115,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/05/01/build-a-blog/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          build-a-blog
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/04/30/test/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/05/01/build-a-blog/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">test---</div>
+      <div class="article-nav-title">build-a-blog</div>
     </a>
   
 </nav>
